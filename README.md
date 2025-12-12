@@ -47,11 +47,11 @@ The goal is to learn security concepts, not to collect flags.
 
 | Game   | Description                          | Status      |
 |--------|--------------------------------------|-------------|
-| Bandit | Linux command line basics            | Complete    |
+| [Bandit](bandit/) | Linux command line basics            | Complete    |
 | Krypton| Cryptography                         | Planned     |
 | Natas  | Web security                         | Planned     |
 
 ## License
 
-This repository is for personal educational use.
+Licensed under the MIT License. See `LICENSE`.
 
