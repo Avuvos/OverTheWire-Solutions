@@ -1,0 +1,10 @@
+[project]
+name = "overthewire"
+version = "0.1.0"
+description = "Educational solutions and scripts for OverTheWire wargames"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+]

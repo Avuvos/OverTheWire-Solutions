@@ -1,0 +1,57 @@
+# OverTheWire Wargames Solutions
+
+Educational solutions for [OverTheWire](https://overthewire.org/wargames/) wargames.
+
+## About
+
+This repository contains structured solutions for various OverTheWire wargames.
+
+Each solution explains the underlying concepts and techniques rather than just providing answers.
+
+## Repository Structure
+
+```
+├── bandit/          # Bandit wargame (Linux basics)
+│   ├── README.md    # Game overview and connection info
+│   └── levelXX.md   # Individual level solutions
+└── ...              # Additional games
+```
+
+## How to Use
+
+1. Navigate to the game directory (e.g., `bandit/`)
+2. Read the game's README for connection details
+3. Work through levels sequentially
+4. Use the solutions only after attempting each level yourself
+
+## Running Python Scripts
+
+Some levels include automation scripts. Run them with:
+
+```bash
+uv run python path/to/solve.py
+```
+
+## Ethical Notice
+
+These solutions are for educational purposes only. Passwords and sensitive credentials are replaced with placeholders (e.g., `<password_level_X>`).
+
+Do not:
+- Share actual passwords publicly
+- Use these techniques against systems you do not own
+- Skip the learning process by copying solutions without understanding
+
+The goal is to learn security concepts, not to collect flags.
+
+## Games Covered
+
+| Game   | Description                          | Status      |
+|--------|--------------------------------------|-------------|
+| Bandit | Linux command line basics            | Complete    |
+| Krypton| Cryptography                         | Planned     |
+| Natas  | Web security                         | Planned     |
+
+## License
+
+This repository is for personal educational use.
+
