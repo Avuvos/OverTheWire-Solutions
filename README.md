@@ -14,6 +14,12 @@ Each solution explains the underlying concepts and techniques rather than just p
 ├── bandit/          # Bandit wargame (Linux basics)
 │   ├── README.md    # Game overview and connection info
 │   └── levelXX.md   # Individual level solutions
+├── krypton/         # Krypton wargame (Cryptography)
+│   ├── README.md    # Game overview and how to run solvers
+│   ├── lib/         # Shared helpers used by level solvers
+│   └── levelXX/     # One folder per level
+│       ├── README.md
+│       └── solve.py
 └── ...              # Additional games
 ```
 
@@ -34,7 +40,9 @@ uv run python path/to/solve.py
 
 ## Ethical Notice
 
-These solutions are for educational purposes only. Passwords and sensitive credentials are replaced with placeholders (e.g., `<password_level_X>`).
+These solutions are for educational purposes only.
+
+For most games, passwords and sensitive credentials are replaced with placeholders (e.g., `<password_level_X>`). For Krypton, early “passwords” are typically non-sensitive puzzle strings and may be included as-is.
 
 Do not:
 - Share actual passwords publicly
@@ -45,11 +53,11 @@ The goal is to learn security concepts, not to collect flags.
 
 ## Games Covered
 
-| Game   | Description                          | Status      |
-|--------|--------------------------------------|-------------|
-| [Bandit](bandit/) | Linux command line basics            | Complete    |
-| Krypton| Cryptography                         | Planned     |
-| Natas  | Web security                         | Planned     |
+| Game                | Description               | Status      |
+|---------------------|---------------------------|-------------|
+| [Bandit](bandit/)   | Linux command line basics | Complete    |
+| [Krypton](krypton/) | Cryptography              | In Progress |
+| Natas               | Web security              | Planned     |
 
 ## License
 
