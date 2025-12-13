@@ -6,7 +6,7 @@ CIPHERTEXT = "OMQEMDUEQMEK"
 OFFSET = 12
 
 if "--all" in sys.argv:
-    for c in brute_force_caesar(CIPHERTEXT):
-        print(f"{c.offset:2d}: {c.decoded}")
+    for offset, decoded in brute_force_caesar(CIPHERTEXT):
+        print(f"{offset:2d}: {decoded}")
 else:
     print(caesar_decode(CIPHERTEXT, OFFSET))

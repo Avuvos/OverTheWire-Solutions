@@ -1,38 +1,25 @@
 import string
-from dataclasses import dataclass
-
 
 ALPHABET_UPPER = string.ascii_uppercase
 ALPHABET_LOWER = string.ascii_lowercase
 
-
 def caesar_decode(text: str, offset: int) -> str:
-    """Decode a Caesar cipher by shifting letters backward by `offset`.
-
-    Non-letters are preserved. Case is preserved.
-    """
-    offset %= 26
-    out: list[str] = []
+    """Decode a Caesar cipher by shifting letters backward by `offset`."""
+    result: list[str] = []
     for ch in text:
         if ch in ALPHABET_UPPER:
             idx = (ord(ch) - ord("A") - offset) % 26
-            out.append(chr(ord("A") + idx))
+            result.append(chr(ord("A") + idx))
         elif ch in ALPHABET_LOWER:
             idx = (ord(ch) - ord("a") - offset) % 26
-            out.append(chr(ord("a") + idx))
+            result.append(chr(ord("a") + idx))
         else:
-            out.append(ch)
-    return "".join(out)
+            result.append(ch)
+    return "".join(result)
 
 
-@dataclass(frozen=True)
-class CaesarCandidate:
-    offset: int
-    decoded: str
-
-
-def brute_force_caesar(ciphertext: str) -> list[CaesarCandidate]:
+def brute_force_caesar(ciphertext: str) -> list[tuple[int, str]]:
     """Return all 26 Caesar decode candidates (offset 0..25)."""
-    return [CaesarCandidate(offset=o, decoded=caesar_decode(ciphertext, o)) for o in range(26)]
+    return [(offset, caesar_decode(ciphertext, offset)) for offset in range(26)]
 
 

@@ -1,8 +1,8 @@
 """OverTheWire Krypton wargame helpers and solutions.
 
-This package is intentionally lightweight so per-level solvers can be run as:
+Run solvers from the krypton/ directory:
 
-    python -m krypton.levelXX.solve
+    uv run levelXX/solve.py
 """
 
 
