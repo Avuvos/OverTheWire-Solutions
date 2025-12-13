@@ -1,13 +1,11 @@
 import base64
 
+ENCODED = "S1JZUFRPTklTR1JFQVQ="
+
 
 def main() -> None:
-    encoded = "S1JZUFRPTklTR1JFQVQ="
-    decoded = base64.b64decode(encoded).decode("utf-8")
-    print(decoded)
+    print(base64.b64decode(ENCODED).decode())
 
 
 if __name__ == "__main__":
     main()
-
-

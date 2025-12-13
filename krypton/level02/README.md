@@ -10,6 +10,8 @@ Caesar cipher (ROT-N).
 
 ## Solution
 
+[`solve.py`](solve.py)
+
 From the `krypton/` directory, brute force all offsets:
 
 ```bash

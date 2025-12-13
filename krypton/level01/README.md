@@ -16,6 +16,8 @@ The level file at `/krypton/krypton1/krypton2` contains:
 
 ## Solution
 
+[`solve.py`](solve.py)
+
 From the `krypton/` directory, print all 26 candidates:
 
 ```bash

@@ -16,6 +16,8 @@ The level provides the following base64 string:
 
 ## Solution
 
+[`solve.py`](solve.py)
+
 From the `krypton/` directory:
 
 ```bash
