@@ -2,21 +2,35 @@
 
 Krypton is the cryptography-focused wargame from OverTheWire.
 
-Unlike other games, many Krypton “passwords” are **non-sensitive puzzle strings** (especially early levels), so this directory may include them in results. Still: don’t publish real credentials/tokens for anything that grants ongoing access.
+Unlike other games, many Krypton "passwords" are **non-sensitive puzzle strings** (especially early levels), so this directory may include them in results. Still: don't publish real credentials/tokens for anything that grants ongoing access.
 
-## Official Resources
+## Level Overview
 
-- [OverTheWire Krypton](https://overthewire.org/wargames/krypton/)
+| Level | Cipher | Key Concept |
+|-------|--------|-------------|
+| 0     | Base64 | Simple encoding (not encryption) |
+| 1     | ROT13  | Fixed-shift substitution |
+| 2     | Caesar | Unknown shift, brute-force |
+| 3     | Caesar | Frequency analysis to find shift |
+| 4     | Vigenère | Repeated-key cipher, known key length |
+| 5     | Vigenère | Unknown key length, brute-force loop |
 
-## Connection Information
+## Shared Library (`lib/`)
 
-Check the official page for current host/port. Typical usage:
+Common crypto utilities are extracted into `lib/` to avoid duplication across levels:
 
-```bash
-ssh krypton0@<host> -p <port>
-```
+| Module | Purpose |
+|--------|---------|
+| [`caesar.py`](lib/caesar.py) | Caesar cipher decode + brute-force |
+| [`ngrams.py`](lib/ngrams.py) | N-gram frequency counting |
+| [`vigenere.py`](lib/vigenere.py) | Vigenère decryption via frequency analysis |
 
-## Running the solvers
+The `vigenere.py` module is the workhorse for levels 4–5, handling:
+- Splitting ciphertext into position streams
+- Guessing key letters from letter frequencies
+- Building decode mappings and decrypting
+
+## Running the Solvers
 
 From the `krypton/` directory:
 
@@ -28,4 +42,16 @@ uv run level02/solve.py --all
 uv run level03/solve.py
 uv run level04/solve.py --all
 uv run level05/solve.py --all
+```
+
+## Official Resources
+
+- [OverTheWire Krypton](https://overthewire.org/wargames/krypton/)
+
+## Connection Information
+
+Check the official page for current host/port. Typical usage:
+
+```bash
+ssh krypton0@<host> -p <port>
 ```
