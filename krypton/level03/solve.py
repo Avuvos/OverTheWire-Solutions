@@ -1,16 +1,12 @@
-from collections import Counter
 from pathlib import Path
+
+from krypton.lib.ngrams import get_ngrams
 
 CIPHERTEXT = "KSVVW BGSJD SVSIS VXBMN YQUUK BNWCU ANMJS"
 
 ENGLISH_FREQ = "ETAOINSHRDLCUMWFGYPBVKJXQZ"
 ENGLISH_BIGRAMS = ["TH", "HE", "IN", "ER", "AN", "RE", "ON", "ES", "EL", "FO", "PL"]
 ENGLISH_TRIGRAMS = ["THE", "AND"]
-
-
-def get_ngrams(text: str, n: int) -> Counter:
-    return Counter(text[i:i+n] for i in range(len(text) - n + 1))
-
 
 def decode(text: str, key_mapping: dict[str, str]) -> str:
     return "".join(key_mapping.get(ch, ch) for ch in text)
