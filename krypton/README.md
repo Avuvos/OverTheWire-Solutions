@@ -25,4 +25,7 @@ cd krypton
 uv run level00/solve.py
 uv run level01/solve.py --all
 uv run level02/solve.py --all
+uv run level03/solve.py
+uv run level04/solve.py --all
+uv run level05/solve.py --all
 ```

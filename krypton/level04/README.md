@@ -54,7 +54,7 @@ The corresponding key is:
 
 ## Solution
 
-[`solve.py`](solve.py)
+[`solve.py`](solve.py) — the core Vigenère decryption logic lives in [`lib/vigenere.py`](../lib/vigenere.py).
 
 From the `krypton/` directory:
 
