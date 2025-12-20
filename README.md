@@ -16,7 +16,13 @@ Each solution explains the underlying concepts and techniques rather than just p
 │   └── levelXX.md   # Individual level solutions
 ├── krypton/         # Krypton wargame (Cryptography)
 │   ├── README.md    # Game overview and how to run solvers
-│   ├── lib/         # Shared helpers used by level solvers
+│   ├── lib/         # Shared crypto helpers
+│   └── levelXX/     # One folder per level
+│       ├── README.md
+│       └── solve.py
+├── natas/           # Natas wargame (Web security)
+│   ├── README.md    # Game overview and how to run solvers
+│   ├── lib/         # Shared session utility
 │   └── levelXX/     # One folder per level
 │       ├── README.md
 │       └── solve.py
@@ -57,7 +63,7 @@ The goal is to learn security concepts, not to collect flags.
 |---------------------|---------------------------|-------------|
 | [Bandit](bandit/)   | Linux command line basics | Complete    |
 | [Krypton](krypton/) | Cryptography              | In Progress |
-| Natas               | Web security              | Planned     |
+| [Natas](natas/)     | Web security              | In Progress |
 
 ## License
 
