@@ -18,5 +18,3 @@ strings data.txt | grep "===="
 
 - `strings`: extracts printable character sequences from binary files
 - `grep "===="`: filters for lines containing the `=` pattern mentioned in the hint
-
-

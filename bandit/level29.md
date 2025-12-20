@@ -40,5 +40,3 @@ git show origin/dev:README.md
 ## Why This Works
 
 The password is stored in a development branch, not the main branch. Developers sometimes leave sensitive data in non-production branches.
-
-

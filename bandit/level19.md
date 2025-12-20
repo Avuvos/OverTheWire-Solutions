@@ -25,5 +25,3 @@ ls -l bandit20-do
 ```
 
 The `s` in the permissions indicates setuid.
-
-

@@ -3,6 +3,7 @@ import string
 ALPHABET_UPPER = string.ascii_uppercase
 ALPHABET_LOWER = string.ascii_lowercase
 
+
 def caesar_decode(text: str, offset: int) -> str:
     """Decode a Caesar cipher by shifting letters backward by `offset`."""
     result: list[str] = []
@@ -21,5 +22,3 @@ def caesar_decode(text: str, offset: int) -> str:
 def brute_force_caesar(ciphertext: str) -> list[tuple[int, str]]:
     """Return all 26 Caesar decode candidates (offset 0..25)."""
     return [(offset, caesar_decode(ciphertext, offset)) for offset in range(26)]
-
-

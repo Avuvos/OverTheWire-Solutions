@@ -19,5 +19,3 @@ After escaping to a proper shell in level 25 (via the vim trick):
 ## Why This Works
 
 The `bandit27-do` binary has the setuid bit set for bandit27. Running it allows reading bandit27's password file.
-
-

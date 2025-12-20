@@ -41,5 +41,3 @@ cat README.md
 ## Why This Works
 
 Git preserves all history. Even if sensitive data is removed in later commits, it remains in the repository's history unless explicitly purged.
-
-

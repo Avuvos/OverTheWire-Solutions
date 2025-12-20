@@ -36,5 +36,3 @@ ssh -i /tmp/key bandit17@localhost -p 2220
 - `nmap` discovers open ports
 - Only one port speaks SSL and returns useful data
 - The returned key provides access to the next level
-
-

@@ -27,5 +27,3 @@ uv run level01/solve.py --all
 The correct offset is 13:
 
 `LEVEL TWO PASSWORD ROTTEN`
-
-

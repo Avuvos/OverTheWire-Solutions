@@ -25,5 +25,3 @@ cat /etc/bandit_pass/bandit14
 ## Why This Works
 
 SSH supports key-based authentication as an alternative to passwords. The `-i` flag specifies the identity file (private key). The server validates it against the corresponding public key.
-
-

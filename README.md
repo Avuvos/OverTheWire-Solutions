@@ -62,4 +62,3 @@ The goal is to learn security concepts, not to collect flags.
 ## License
 
 Licensed under the MIT License. See `LICENSE`.
-

@@ -29,5 +29,3 @@ cat repo/README
 ## Why This Works
 
 The password is stored directly in the repository's README file.
-
-

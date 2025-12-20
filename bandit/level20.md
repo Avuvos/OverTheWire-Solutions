@@ -36,5 +36,3 @@ echo "<password_level_20>" | nc -l -p 4444 &
 ## Why This Works
 
 The `suconnect` binary connects to the specified port, reads data, and compares it to the current password. If correct, it sends back the next level's password.
-
-

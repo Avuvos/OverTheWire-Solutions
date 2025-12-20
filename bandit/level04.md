@@ -31,5 +31,3 @@ cat inhere/-file07
 ## Why This Works
 
 The `file` command examines file contents to determine their type, regardless of extension. Human-readable files are identified as "ASCII text".
-
-

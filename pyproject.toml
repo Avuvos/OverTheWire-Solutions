@@ -57,7 +57,10 @@ ignore = [
     "PLR2004", # magic values allowed
     "D415",    # summary punctuation
     "D100",    # module docstrings
+    "D103",    # Missing docstring in public function
+    "D104",    # Missing docstring in public package
     "D205",    # blank line after summary
+
 ]
 fixable = ["ALL"]
 

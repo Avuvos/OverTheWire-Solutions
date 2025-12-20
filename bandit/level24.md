@@ -25,5 +25,3 @@ This tries all PINs from 0000 to 9999 and filters out failure messages.
 ## Why This Works
 
 With only 10,000 possible combinations (0000-9999), brute-forcing is practical. The script generates all possibilities and pipes them to the service.
-
-
