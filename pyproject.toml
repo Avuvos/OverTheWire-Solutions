@@ -18,6 +18,7 @@ Repository = "https://github.com/Avuvos/OverTheWire-Solutions"
 
 [dependency-groups]
 dev = [
+    "ruff>=0.8.3",
     "pre-commit>=4.5.1",
 ]
 
@@ -30,7 +31,7 @@ packages = ["krypton", "natas"]
 
 [tool.ruff]
 target-version = "py311"
-line-length = 160
+line-length = 140
 
 [tool.ruff.lint]
 select = [
@@ -52,15 +53,15 @@ select = [
     "RUF", # ruff-specific
 ]
 ignore = [
-    "D203",    # conflicts with D211 (no blank line before class)
-    "D213",    # conflicts with D212 (summary on first line)
-    "COM812",  # trailing comma - handled by formatter
-    "PLR2004", # magic values allowed
-    "D415",    # summary punctuation
-    "D100",    # module docstrings
+    "D203",    # Conflicts with D211 (No blank line before class docstring)
+    "D213",    # Conflicts with D212 (Summary on first line)
+    "COM812",  # Trailing comma - handled by formatter
+    "PLR2004", # Magic values allowed
+    "D415",    # Summary punctuation
+    "D100",    # Module docstrings
     "D103",    # Missing docstring in public function
     "D104",    # Missing docstring in public package
-    "D205",    # blank line after summary
+    "D205",    # Blank line after summary
 
 ]
 fixable = ["ALL"]
