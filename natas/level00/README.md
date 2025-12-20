@@ -17,4 +17,3 @@ Simply authenticate and view the page source — the password is in an HTML comm
 ```bash
 uv run natas/level00/solve.py
 ```
-

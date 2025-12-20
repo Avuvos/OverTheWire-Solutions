@@ -22,14 +22,26 @@ Common utilities are extracted into `lib/` to avoid duplication across levels:
 
 Passwords are loaded from environment variables (`NATAS0`, `NATAS1`, etc.) via a `.natas.env` file.
 
-## Running the Solvers
+## Setup
 
-From the project root:
+From the `natas/` directory:
 
 ```bash
-uv run natas/level00/solve.py
-uv run natas/level01/solve.py
-uv run natas/level02/solve.py
+cd natas
+cp lib/.natas.env.example lib/.natas.env
+```
+
+Then fill in passwords as you solve each level.
+
+## Running the Solvers
+
+From the `natas/` directory:
+
+```bash
+cd natas
+uv run level00/solve.py
+uv run level01/solve.py
+uv run level02/solve.py
 ```
 
 ## Official Resources
@@ -45,4 +57,3 @@ http://natasX.natas.labs.overthewire.org
 ```
 
 Authentication uses HTTP Basic Auth with username `natasX` and the corresponding password.
-

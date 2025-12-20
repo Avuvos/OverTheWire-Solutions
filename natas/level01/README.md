@@ -17,4 +17,3 @@ Same as level 0 — the password is in an HTML comment. The page tries to block 
 ```bash
 uv run natas/level01/solve.py
 ```
-

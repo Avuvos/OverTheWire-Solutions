@@ -19,4 +19,3 @@ Navigating to `/files/` shows directory listing is enabled, revealing a `users.t
 ```bash
 uv run natas/level02/solve.py
 ```
-
