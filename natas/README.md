@@ -14,6 +14,7 @@ Each level involves finding a vulnerability in a web application to retrieve the
 | 3     | Robots.txt / hidden directories |
 | 4     | HTTP Referer header spoofing |
 | 5     | Cookie manipulation |
+| 6     | Exposed include files |
 
 ## Shared Library (`lib/`)
 
