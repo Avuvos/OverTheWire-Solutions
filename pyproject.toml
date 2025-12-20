@@ -4,9 +4,20 @@ version = "0.1.0"
 description = "Educational solutions and scripts for OverTheWire wargames"
 readme = "README.md"
 requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Avuvos" }]
+keywords = ["security", "ctf", "wargames", "cryptography", "overthewire", "bandit", "krypton"]
 dependencies = [
     "requests",
     "beautifulsoup4",
+]
+
+[project.urls]
+Repository = "https://github.com/Avuvos/OverTheWire-Solutions"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
 ]
 
 [build-system]
@@ -15,3 +26,45 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["krypton"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 160
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # bugbear
+    "UP",  # pyupgrade
+    "C4",  # comprehensions
+    "D",   # pydocstyle
+    "ANN", # annotations
+    "S",   # bandit (security)
+    "A",   # builtins shadowing
+    "COM", # commas
+    "SIM", # simplify
+    "TCH", # type-checking imports
+    "PL",  # pylint
+    "RUF", # ruff-specific
+]
+ignore = [
+    "D203",    # conflicts with D211 (no blank line before class)
+    "D213",    # conflicts with D212 (summary on first line)
+    "COM812",  # trailing comma - handled by formatter
+    "PLR2004", # magic values allowed
+    "D415",    # summary punctuation
+    "D100",    # module docstrings
+    "D205",    # blank line after summary
+]
+fixable = ["ALL"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
