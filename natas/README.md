@@ -12,6 +12,7 @@ Each level involves finding a vulnerability in a web application to retrieve the
 | 1     | View source (right-click disabled) |
 | 2     | Directory listing / exposed files |
 | 3     | Robots.txt / hidden directories |
+| 4     | HTTP Referer header spoofing |
 
 ## Shared Library (`lib/`)
 
