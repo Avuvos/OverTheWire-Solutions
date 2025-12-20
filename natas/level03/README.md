@@ -25,4 +25,3 @@ Navigating to `/s3cr3t/` shows a directory listing with `users.txt` containing t
 ```bash
 uv run level03/solve.py
 ```
-

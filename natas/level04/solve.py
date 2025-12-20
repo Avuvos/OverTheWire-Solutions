@@ -8,4 +8,3 @@ response = session.get(url, headers={"referer": "http://natas5.natas.labs.overth
 
 regex = r"The password for natas5 is (.*)"
 print(re.findall(regex, response.text)[0])
-

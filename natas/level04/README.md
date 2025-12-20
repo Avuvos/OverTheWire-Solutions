@@ -19,4 +19,3 @@ The server checks the `Referer` HTTP header to verify where the request originat
 ```bash
 uv run level04/solve.py
 ```
-
