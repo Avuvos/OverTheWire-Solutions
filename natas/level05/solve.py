@@ -8,4 +8,3 @@ response = session.get(url, cookies={"loggedin": "1"})
 
 regex = r"The password for natas6 is (.*)<"
 print(re.findall(regex, response.text)[0])
-

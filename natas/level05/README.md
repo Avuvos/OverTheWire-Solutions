@@ -19,4 +19,3 @@ Inspecting the cookies reveals a `loggedin=0` cookie. Simply change this value t
 ```bash
 uv run level05/solve.py
 ```
-
