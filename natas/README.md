@@ -11,6 +11,7 @@ Each level involves finding a vulnerability in a web application to retrieve the
 | 0     | View page source |
 | 1     | View source (right-click disabled) |
 | 2     | Directory listing / exposed files |
+| 3     | Robots.txt / hidden directories |
 
 ## Shared Library (`lib/`)
 
@@ -39,9 +40,7 @@ From the `natas/` directory:
 
 ```bash
 cd natas
-uv run level00/solve.py
-uv run level01/solve.py
-uv run level02/solve.py
+uv run levelXX/solve.py
 ```
 
 ## Official Resources
