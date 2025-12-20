@@ -25,5 +25,3 @@ cat < -
 ## Why This Works
 
 The `./` prefix tells the shell to treat `-` as a file in the current directory rather than as stdin or an option flag.
-
-

@@ -43,5 +43,3 @@ Repeat until you get a text file with the password.
 - Different tools handle different formats
 
 The file is nested in multiple compression layers as a teaching exercise.
-
-

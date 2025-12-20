@@ -19,5 +19,3 @@ After the connection is established, paste the current password and press Enter.
 ## Why This Works
 
 Unlike plain netcat, this port requires encrypted communication. The `openssl s_client` command establishes a TLS connection, allowing secure data transmission.
-
-

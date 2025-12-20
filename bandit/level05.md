@@ -26,5 +26,3 @@ cat ./inhere/maybehere07/.file2
 - `-size 1033c`: exactly 1033 bytes (`c` = bytes)
 - `! -executable`: not executable
 - The `-exec` with `file` filters for human-readable content
-
-

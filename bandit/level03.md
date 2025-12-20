@@ -25,5 +25,3 @@ cat inhere/...Hiding-From-You
 ## Why This Works
 
 Files beginning with `.` are hidden from normal `ls` output. The `-a` flag shows all files including hidden ones.
-
-

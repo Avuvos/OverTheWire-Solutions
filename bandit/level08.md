@@ -20,5 +20,3 @@ sort data.txt | uniq -u
 - `uniq -u`: prints only lines that appear exactly once
 
 The `uniq` command only detects adjacent duplicates, which is why sorting first is essential.
-
-

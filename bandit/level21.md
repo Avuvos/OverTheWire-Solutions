@@ -31,5 +31,3 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 ## Why This Works
 
 Cron jobs run scripts automatically at scheduled times. By reading the script, we can see where it stores output and access it directly.
-
-

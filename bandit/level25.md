@@ -43,5 +43,3 @@ cat /etc/bandit_pass/bandit26
 ## Why This Works
 
 The restricted shell pipes output through `more`. When the terminal is small, `more` waits for input. Vim can be launched from `more`, and vim can spawn a real shell.
-
-

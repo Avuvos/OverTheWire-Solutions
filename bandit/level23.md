@@ -43,5 +43,3 @@ cat /tmp/mydir/pass.txt
 ## Why This Works
 
 The cron job executes scripts placed in a specific directory as bandit24. Our script reads bandit24's password and writes it to a location we can access.
-
-

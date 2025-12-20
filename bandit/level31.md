@@ -40,5 +40,3 @@ The push response contains the password.
 ## Why This Works
 
 The `.gitignore` file prevents certain files from being tracked. By removing it, we can add and push the required file. The server responds with the password upon successful push.
-
-

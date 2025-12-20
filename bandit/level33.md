@@ -21,5 +21,3 @@ Throughout Bandit, we practiced:
 
 
 I hope you enjoyed and these solutions were helpful!
-
-

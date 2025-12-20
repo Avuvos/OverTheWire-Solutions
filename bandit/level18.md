@@ -25,5 +25,3 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220 -t /bin/sh
 ## Why This Works
 
 The `.bashrc` file logs you out immediately. By passing a command directly to SSH, it executes before the logout. Alternatively, forcing a different shell bypasses the bash configuration.
-
-

@@ -4,5 +4,3 @@ Run solvers from the krypton/ directory:
 
     uv run levelXX/solve.py
 """
-
-

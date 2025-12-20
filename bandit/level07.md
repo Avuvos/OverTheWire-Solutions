@@ -23,5 +23,3 @@ grep millionth data.txt
 ## Why This Works
 
 `grep` searches for patterns in text. It returns the entire line containing the match, which includes the password.
-
-

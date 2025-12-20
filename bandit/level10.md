@@ -17,5 +17,3 @@ base64 -d data.txt
 ## Why This Works
 
 Base64 is a common encoding scheme that represents binary data as ASCII text. The `-d` flag decodes the encoded content back to its original form.
-
-

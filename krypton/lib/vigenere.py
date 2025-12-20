@@ -1,8 +1,8 @@
 """Vigenère / repeated-key cipher utilities shared across Krypton solvers."""
 
-from itertools import product
 import string
-from typing import Generator
+from collections.abc import Generator
+from itertools import product
 
 from krypton.lib.ngrams import get_ngrams
 
@@ -16,17 +16,12 @@ def build_position_streams(corpus: list[str], key_length: int) -> list[str]:
 
 def candidate_key_letters(position_corpus: str, top_n: int) -> list[str]:
     """Return candidate key letters for a position by assuming top cipher letters map to 'E'."""
-    most_common_cipher_letters = "".join(
-        ch for ch, _ in get_ngrams(position_corpus, 1).most_common()
-    )[:top_n]
-    return [
-        chr(ord("A") + ((ord(ch) - ord(MOST_COMMON_ENGLISH_LETTER)) % 26))
-        for ch in most_common_cipher_letters
-    ]
+    most_common_cipher_letters = "".join(ch for ch, _ in get_ngrams(position_corpus, 1).most_common())[:top_n]
+    return [chr(ord("A") + ((ord(ch) - ord(MOST_COMMON_ENGLISH_LETTER)) % 26)) for ch in most_common_cipher_letters]
 
 
 def build_key_mappings(key: tuple[str, ...]) -> list[dict[str, str]]:
-    """Build Caesar decode tables (cipher A–Z -> plain A–Z), one per key position."""
+    """Build Caesar decode tables (cipher A-Z -> plain A-Z), one per key position."""
     mappings: list[dict[str, str]] = [{} for _ in range(len(key))]
     for i, key_ch in enumerate(key):
         offset = ord(key_ch) - ord("A")
@@ -51,8 +46,7 @@ def decrypt_vigenere(
     top_n: int,
     show_all: bool = False,
 ) -> Generator[tuple[tuple[str, ...], str], None, None]:
-    """
-    Decrypt a Vigenère cipher by frequency analysis.
+    """Decrypt a Vigenère cipher by frequency analysis.
 
     Args:
         ciphertext: The ciphertext to decrypt.

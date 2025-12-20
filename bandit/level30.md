@@ -34,5 +34,3 @@ git show secret
 ## Why This Works
 
 Git tags are references to specific commits, often used for releases. They can contain messages or point to objects with sensitive data.
-
-

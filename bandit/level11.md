@@ -22,5 +22,3 @@ ROT13 rotates each letter by 13 positions in the alphabet. The `tr` command tran
 - Same for lowercase
 
 Since the alphabet has 26 letters, applying ROT13 twice returns the original text.
-
-

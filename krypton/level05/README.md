@@ -17,13 +17,13 @@ We're given:
 
 ## Approach
 
-1. **Loop over possible key lengths (1–19)**  
+1. **Loop over possible key lengths (1–19)**
    Since we don't know the key length, we try each length and apply the same frequency analysis from Level 4.
 
-2. **Use top-1 candidate per position**  
+2. **Use top-1 candidate per position**
    With unknown key length, we use `top_n=1` to reduce output and find the most likely key per length.
 
-3. **Identify the correct key length**  
+3. **Identify the correct key length**
    The correct key length (9) produces readable plaintext.
 
 ## Result
@@ -47,4 +47,3 @@ To brute-force all key lengths and see all candidates:
 ```bash
 uv run level05/solve.py --all
 ```
-

@@ -1,5 +1,5 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
 from krypton.lib.vigenere import decrypt_vigenere
 

@@ -32,5 +32,3 @@ cat /tmp/<hash_output>
 ## Why This Works
 
 The script runs as bandit23 and writes its password to a file named after an MD5 hash. By understanding the naming scheme, we can predict and read the file.
-
-

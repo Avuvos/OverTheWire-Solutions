@@ -27,5 +27,3 @@ For the level-provided ciphertext, the correct offset is 12, yielding:
 The level also hints at a chosen-plaintext approach: encrypt something like `AAA` using the provided mechanism, then infer the shift from what `A` becomes.
 
 Example: if `A -> M`, that’s an offset of 12.
-
-

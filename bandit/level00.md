@@ -23,5 +23,3 @@ Once logged in, read the readme file:
 ```bash
 cat readme
 ```
-
-

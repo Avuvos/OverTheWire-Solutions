@@ -23,5 +23,3 @@ From the `krypton/` directory:
 ```bash
 uv run level00/solve.py
 ```
-
-

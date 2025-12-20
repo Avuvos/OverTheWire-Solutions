@@ -29,5 +29,3 @@ cat /var/lib/dpkg/info/bandit7.password
 - `-group bandit6`: owned by group bandit6
 - `-size 33c`: exactly 33 bytes
 - `2>/dev/null`: suppress permission denied errors
-
-
