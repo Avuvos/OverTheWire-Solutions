@@ -39,4 +39,3 @@ Submit the decoded secret to get the password.
 ```bash
 uv run level08/solve.py
 ```
-
