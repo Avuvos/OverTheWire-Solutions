@@ -25,4 +25,3 @@ Using directory traversal, navigate to `index.php?page=/etc/natas_webpass/natas8
 ```bash
 uv run level07/solve.py
 ```
-
