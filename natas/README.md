@@ -8,13 +8,17 @@ Each level involves finding a vulnerability in a web application to retrieve the
 
 | Level | Key Concept |
 |-------|-------------|
-| 0     | View page source |
-| 1     | View source (right-click disabled) |
-| 2     | Directory listing / exposed files |
-| 3     | Robots.txt / hidden directories |
-| 4     | HTTP Referer header spoofing |
-| 5     | Cookie manipulation |
-| 6     | Exposed include files |
+| [0](level00/)  | View page source |
+| [1](level01/)  | View source (right-click disabled) |
+| [2](level02/)  | Directory listing / exposed files |
+| [3](level03/)  | Robots.txt / hidden directories |
+| [4](level04/)  | HTTP Referer header spoofing |
+| [5](level05/)  | Cookie manipulation |
+| [6](level06/)  | Exposed include files |
+| [7](level07/)  | Directory traversal / LFI |
+| [8](level08/)  | Reversing encoding operations |
+| [9](level09/)  | Command injection |
+| [10](level10/) | Command injection via `grep` arguments |
 
 ## Shared Library (`lib/`)
 
