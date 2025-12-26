@@ -6,6 +6,8 @@ Educational solutions for [OverTheWire](https://overthewire.org/wargames/) warga
 
 This repository contains structured solutions for various OverTheWire wargames.
 
+**Krypton** and **Natas** feature fully automated Python solvers. Each script automatically retrieves the password for the next level.
+
 Each solution explains the underlying concepts and techniques rather than just providing answers.
 
 ## Repository Structure
@@ -29,20 +31,21 @@ Each solution explains the underlying concepts and techniques rather than just p
 └── ...              # Additional games
 ```
 
-## How to Use
+## Running the Solvers
 
-1. Navigate to the game directory (e.g., `bandit/`)
-2. Read the game's README for connection details
-3. Work through levels sequentially
-4. Use the solutions only after attempting each level yourself
-
-## Running Python Scripts
-
-Some levels include automation scripts. Run them with:
+The **Krypton** and **Natas** solvers are fully automatic. Simply run the script and it will output the password for the next level:
 
 ```bash
-uv run python path/to/solve.py
+# Krypton (Cryptography)
+uv run krypton/level00/solve.py
+uv run krypton/level01/solve.py
+
+# Natas (Web Security)
+uv run natas/level00/solve.py
+uv run natas/level11/solve.py
 ```
+
+Each game directory contains its own README with detailed setup instructions and connection information.
 
 ## Ethical Notice
 
@@ -59,11 +62,11 @@ The goal is to learn security concepts, not to collect flags.
 
 ## Games Covered
 
-| Game                | Description               | Status      |
+| Game                | Description               | Progress    |
 |---------------------|---------------------------|-------------|
-| [Bandit](bandit/)   | Linux command line basics | Complete    |
-| [Krypton](krypton/) | Cryptography              | In Progress |
-| [Natas](natas/)     | Web security              | In Progress |
+| [Bandit](bandit/)   | Linux command line basics | **34 / 34** |
+| [Krypton](krypton/) | Cryptography              | **6 / 7**   |
+| [Natas](natas/)     | Web security              | **12 / 34** |
 
 ## License
 
