@@ -26,28 +26,22 @@ Common utilities are extracted into `lib/` to avoid duplication across levels:
 
 | Module | Purpose |
 |--------|---------|
-| [`session.py`](lib/session.py) | Authenticated session setup |
+| [`session.py`](lib/session.py) | Session management and source code utilities |
 
 Passwords are loaded from environment variables (`NATAS0`, `NATAS1`, etc.) via a `.natas.env` file.
 
 ## Setup
 
-From the `natas/` directory:
-
 ```bash
-cd natas
-cp lib/.natas.env.example lib/.natas.env
+cp natas/lib/.natas.env.example natas/lib/.natas.env
 ```
 
 Then fill in passwords as you solve each level.
 
 ## Running the Solvers
 
-From the `natas/` directory:
-
 ```bash
-cd natas
-uv run levelXX/solve.py
+uv run natas/levelXX/solve.py
 ```
 
 ## Official Resources
