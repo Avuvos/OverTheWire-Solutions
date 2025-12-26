@@ -1,18 +1,12 @@
 import base64
 import re
 
-from bs4 import BeautifulSoup
-
-from natas.lib import natas_session
+from natas.lib import get_source_code, natas_session
 
 session, url = natas_session(8)
 
-response = session.get(url + "/index-source.html")
-
-text = response.text.replace("<br />", "\n").replace("&nbsp;", " ")
-soup = BeautifulSoup(text, "html.parser")
-
-secret = re.findall(r'\$encodedSecret *= *"([^"]+)" *;', soup.get_text())[0]
+source_code = get_source_code(session, url)
+secret = re.findall(r'\$encodedSecret *= *"([^"]+)" *;', source_code)[0]
 
 # Reverse: bin2hex(strrev(base64_encode($secret)))
 decoded_secret = base64.b64decode(bytes.fromhex(secret)[::-1]).decode()
