@@ -6,9 +6,9 @@ Educational solutions for [OverTheWire](https://overthewire.org/wargames/) warga
 
 This repository contains structured solutions for various OverTheWire wargames.
 
-**Krypton** and **Natas** feature fully automated Python solvers. Each script automatically retrieves the password for the next level.
+Each level has its own README that explains the underlying concepts and techniques rather than just providing answers.
 
-Each solution explains the underlying concepts and techniques rather than just providing answers.
+**Krypton** and **Natas** feature fully automated Python solvers. Each script automatically retrieves the password for the next level.
 
 ## Repository Structure
 
