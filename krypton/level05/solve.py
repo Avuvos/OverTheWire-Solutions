@@ -9,7 +9,8 @@ KEY_LENGTH = 9  # discovered through brute-force
 
 def load_ciphertexts() -> list[str]:
     """Load all `found*.txt` ciphertext samples with whitespace removed."""
-    cipher_files = sorted(Path("level05/cipher_texts").glob("found*.txt"))
+    base_dir = Path(__file__).parent
+    cipher_files = sorted((base_dir / "cipher_texts").glob("found*.txt"))
     return [p.read_text().replace("\n", "").replace(" ", "") for p in cipher_files]
 
 

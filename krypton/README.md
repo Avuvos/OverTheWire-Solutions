@@ -8,12 +8,12 @@ Unlike other games, many Krypton "passwords" are **non-sensitive puzzle strings*
 
 | Level | Cipher | Key Concept |
 |-------|--------|-------------|
-| 0     | Base64 | Simple encoding (not encryption) |
-| 1     | ROT13  | Fixed-shift substitution |
-| 2     | Caesar | Unknown shift, brute-force |
-| 3     | Caesar | Frequency analysis to find shift |
-| 4     | Vigenère | Repeated-key cipher, known key length |
-| 5     | Vigenère | Unknown key length, brute-force loop |
+| [0](level00/)     | Base64 | Simple encoding (not encryption) |
+| [1](level01/)     | ROT13  | Fixed-shift substitution |
+| [2](level02/)     | Caesar | Unknown shift, brute-force |
+| [3](level03/)     | Caesar | Frequency analysis to find shift |
+| [4](level04/)     | Vigenère | Repeated-key cipher, known key length |
+| [5](level05/)     | Vigenère | Unknown key length, brute-force loop |
 
 ## Shared Library (`lib/`)
 
@@ -32,16 +32,13 @@ The `vigenere.py` module is the workhorse for levels 4–5, handling:
 
 ## Running the Solvers
 
-From the `krypton/` directory:
-
 ```bash
-cd krypton
-uv run level00/solve.py
-uv run level01/solve.py --all
-uv run level02/solve.py --all
-uv run level03/solve.py
-uv run level04/solve.py --all
-uv run level05/solve.py --all
+uv run krypton/level00/solve.py
+uv run krypton/level01/solve.py --all
+uv run krypton/level02/solve.py --all
+uv run krypton/level03/solve.py
+uv run krypton/level04/solve.py --all
+uv run krypton/level05/solve.py --all
 ```
 
 ## Official Resources

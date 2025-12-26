@@ -39,7 +39,8 @@ def apply_bigram_mappings(key_mapping: dict[str, str], cipher_bigrams: list[str]
 
 
 def main() -> None:
-    corpus = "".join(Path(f"level03/cipher_texts/found{i}.txt").read_text().replace("\n", "").replace(" ", "") for i in range(1, 4))
+    base_dir = Path(__file__).parent
+    corpus = "".join((base_dir / f"cipher_texts/found{i}.txt").read_text().replace("\n", "").replace(" ", "") for i in range(1, 4))
 
     cipher_freq_order = "".join(ch for ch, _ in get_ngrams(corpus, 1).most_common())
     cipher_trigrams = [tg for tg, _ in get_ngrams(corpus, 3).most_common(2)]

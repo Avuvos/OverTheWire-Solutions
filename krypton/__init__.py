@@ -1,6 +1,6 @@
 """OverTheWire Krypton wargame helpers and solutions.
 
-Run solvers from the krypton/ directory:
+Run solvers from anywhere:
 
-    uv run levelXX/solve.py
+    uv run krypton/levelXX/solve.py
 """
