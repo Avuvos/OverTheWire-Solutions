@@ -13,7 +13,7 @@ load_dotenv(Path(__file__).parent / ".natas.env")
 BASE_URL = "http://natas{level}.natas.labs.overthewire.org"
 
 
-def get_password(level: int) -> str:
+def _get_password(level: int) -> str:
     """Get password for a natas level from environment variable."""
     env_var = f"NATAS{level}"
     password = os.getenv(env_var)
@@ -28,7 +28,7 @@ def get_password(level: int) -> str:
 def natas_session(level: int) -> tuple[requests.Session, str]:
     """Create an authenticated session and return (session, url) for the given level."""
     username = f"natas{level}"
-    password = get_password(level)
+    password = _get_password(level)
     url = BASE_URL.format(level=level)
 
     session = requests.Session()
