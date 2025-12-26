@@ -42,18 +42,18 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 | [18](level18.md)    | Bypassing restricted shells |
 | [19](level19.md)    | Setuid binaries |
 | [20](level20.md)    | Network daemons |
-| [21](level21.md)    | Cron jobs and scripting |
-| [22](level22.md)    | Cron jobs and scripting |
-| [23](level23.md)    | Cron jobs and scripting |
-| [24](level24.md)    | Cron jobs and scripting |
-| [25](level25.md)    | Shell escapes |
-| [26](level26.md)    | Shell escapes |
-| [27](level27.md)    | Git operations |
-| [28](level28.md)    | Git operations |
-| [29](level29.md)    | Git operations |
-| [30](level30.md)    | Git operations |
-| [31](level31.md)    | Git operations |
-| [32](level32.md)    | Git tags |
+| [21](level21.md)    | Cron jobs |
+| [22](level22.md)    | Bash scripts and command substitution |
+| [23](level23.md)    | Cron script execution |
+| [24](level24.md)    | Brute-force attacks |
+| [25](level25.md)    | Pager-based shell escape |
+| [26](level26.md)    | Setuid binary execution |
+| [27](level27.md)    | Git cloning |
+| [28](level28.md)    | Git commit history |
+| [29](level29.md)    | Git branches |
+| [30](level30.md)    | Git tags |
+| [31](level31.md)    | Git push operations |
+| [32](level32.md)    | Shell variable escapes |
 | [33](level33.md)    | Shell escape (uppercase) |
 
 ## Official Resources
