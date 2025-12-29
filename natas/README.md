@@ -20,6 +20,7 @@ Each level involves finding a vulnerability in a web application to retrieve the
 | [9](level09/)  | Command injection |
 | [10](level10/) | Command injection via `grep` arguments |
 | [11](level11/) | XOR encryption with known plaintext attack |
+| [12](level12/) | Unrestricted file upload via client-controlled filename |
 
 ## Shared Library (`lib/`)
 
