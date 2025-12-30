@@ -66,7 +66,7 @@ The goal is to learn security concepts, not to collect flags.
 |---------------------|---------------------------|-------------|
 | [Bandit](bandit/)   | Linux command line basics | **34 / 34** |
 | [Krypton](krypton/) | Cryptography              | **6 / 7**   |
-| [Natas](natas/)     | Web security              | **12 / 34** |
+| [Natas](natas/)     | Web security              | **13 / 34** |
 
 ## License
 
