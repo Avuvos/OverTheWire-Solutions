@@ -22,6 +22,8 @@ Each level involves finding a vulnerability in a web application to retrieve the
 | [11](level11/) | XOR encryption with known plaintext attack |
 | [12](level12/) | Unrestricted file upload via client-controlled filename |
 | [13](level13/) | File upload validation bypass via image magic bytes |
+| [14](level14/) | SQL Injection |
+| [15](level15/) | Blind SQL Injection |
 
 ## Shared Library (`lib/`)
 
