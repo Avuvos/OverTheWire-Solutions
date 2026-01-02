@@ -1,6 +1,12 @@
 # OverTheWire Wargames Solutions
+[![Bandit](https://img.shields.io/badge/Bandit-34%2F34-success?style=flat-square)](bandit/)
+[![Krypton](https://img.shields.io/badge/Krypton-6%2F7-yellow?style=flat-square)](krypton/)
+[![Natas](https://img.shields.io/badge/Natas-15%2F34-orange?style=flat-square)](natas/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg?style=flat-square)](https://www.python.org/downloads/)
 
-Educational solutions for [OverTheWire](https://overthewire.org/wargames/) wargames.
+
+Educational writeups and automated Python solvers for [OverTheWire](https://overthewire.org/wargames/) wargames.
 
 ## About
 
@@ -10,26 +16,12 @@ Each level has its own README that explains the underlying concepts and techniqu
 
 **Krypton** and **Natas** feature fully automated Python solvers. Each script automatically retrieves the password for the next level.
 
-## Repository Structure
 
-```
-├── bandit/          # Bandit wargame (Linux basics)
-│   ├── README.md    # Game overview and connection info
-│   └── levelXX.md   # Individual level solutions
-├── krypton/         # Krypton wargame (Cryptography)
-│   ├── README.md    # Game overview and how to run solvers
-│   ├── lib/         # Shared crypto helpers
-│   └── levelXX/     # One folder per level
-│       ├── README.md
-│       └── solve.py
-├── natas/           # Natas wargame (Web security)
-│   ├── README.md    # Game overview and how to run solvers
-│   ├── lib/         # Shared session utility
-│   └── levelXX/     # One folder per level
-│       ├── README.md
-│       └── solve.py
-└── ...              # Additional games
-```
+## Repository structure (quick map)
+- `bandit/`: Markdown walkthroughs (`level00.md` … `level33.md`)
+- `krypton/`: Per-level solvers + crypto helpers in `krypton/lib/`
+- `natas/`: Per-level solvers + session utilities in `natas/lib/`
+
 
 ## Running the Solvers
 
@@ -38,11 +30,9 @@ The **Krypton** and **Natas** solvers are fully automatic. Simply run the script
 ```bash
 # Krypton (Cryptography)
 uv run krypton/level00/solve.py
-uv run krypton/level01/solve.py
 
 # Natas (Web Security)
 uv run natas/level00/solve.py
-uv run natas/level11/solve.py
 ```
 
 Each game directory contains its own README with detailed setup instructions and connection information.
@@ -64,9 +54,9 @@ The goal is to learn security concepts, not to collect flags.
 
 | Game                | Description               | Progress    |
 |---------------------|---------------------------|-------------|
-| [Bandit](bandit/)   | Linux command line basics | **34 / 34** |
-| [Krypton](krypton/) | Cryptography              | **6 / 7**   |
-| [Natas](natas/)     | Web security              | **15 / 34** |
+| [Bandit](bandit/)   | Linux command line basics | **34 / 34**✅ |
+| [Krypton](krypton/) | Cryptography              | **6 / 7**  🟡 |
+| [Natas](natas/)     | Web security              | **15 / 34** 🟠|
 
 ## License
 
