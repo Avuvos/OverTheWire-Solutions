@@ -10,7 +10,7 @@ Blind SQL Injection
 
 ## Solution
 
-Unlike [level 14](../level10), we cannot bypass authentication by returning all rows. Instead, the server provides binary feedback based on whether our query matches any rows:
+Unlike [level 14](../level14), we cannot bypass authentication by returning all rows. Instead, the server provides binary feedback based on whether our query matches any rows:
 ```php
 if(mysqli_num_rows($res) > 0) {
     echo "This user exists.<br>";
