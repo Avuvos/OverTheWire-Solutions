@@ -24,6 +24,7 @@ Each level involves finding a vulnerability in a web application to retrieve the
 | [13](level13/) | File upload validation bypass via image magic bytes |
 | [14](level14/) | SQL Injection |
 | [15](level15/) | Blind SQL Injection |
+| [16](level16/) | Blind Command Injection via command substitution |
 
 ## Shared Library (`lib/`)
 
