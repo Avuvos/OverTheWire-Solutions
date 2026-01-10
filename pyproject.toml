@@ -52,6 +52,7 @@ select = [
     "PL",  # pylint
     "RUF", # ruff-specific
 ]
+
 ignore = [
     "D203",    # Conflicts with D211 (No blank line before class docstring)
     "D213",    # Conflicts with D212 (Summary on first line)
@@ -62,8 +63,9 @@ ignore = [
     "D103",    # Missing docstring in public function
     "D104",    # Missing docstring in public package
     "D205",    # Blank line after summary
-
+    "S608",    # Possible SQL injection vector through string-based query construction
 ]
+
 fixable = ["ALL"]
 
 [tool.ruff.lint.pydocstyle]

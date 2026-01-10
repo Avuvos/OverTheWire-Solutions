@@ -1,7 +1,7 @@
 # OverTheWire Wargames Solutions
 [![Bandit](https://img.shields.io/badge/Bandit-34%2F34-success?style=flat-square)](bandit/)
 [![Krypton](https://img.shields.io/badge/Krypton-6%2F7-yellow?style=flat-square)](krypton/)
-[![Natas](https://img.shields.io/badge/Natas-16%2F34-orange?style=flat-square)](natas/)
+[![Natas](https://img.shields.io/badge/Natas-17%2F34-orange?style=flat-square)](natas/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg?style=flat-square)](https://www.python.org/downloads/)
 
@@ -56,7 +56,7 @@ The goal is to learn security concepts, not to collect flags.
 |---------------------|---------------------------|-------------|
 | [Bandit](bandit/)   | Linux command line basics | **34 / 34** ✅ |
 | [Krypton](krypton/) | Cryptography              | **6 / 7**  🟡 |
-| [Natas](natas/)     | Web security              | **16 / 34** 🟠|
+| [Natas](natas/)     | Web security              | **17 / 34** 🟠|
 
 ## License
 

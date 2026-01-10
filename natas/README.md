@@ -25,6 +25,7 @@ Each level involves finding a vulnerability in a web application to retrieve the
 | [14](level14/) | SQL Injection |
 | [15](level15/) | Blind SQL Injection |
 | [16](level16/) | Blind Command Injection via command substitution |
+| [17](level17/) | Time-based Blind SQL Injection |
 
 ## Shared Library (`lib/`)
 
